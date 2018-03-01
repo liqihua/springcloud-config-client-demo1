@@ -1,0 +1,13 @@
+server:
+  port: 8889
+
+spring:
+  cloud:
+    config:
+      label: master #git分支名称
+      profile: demo1 #文件后缀名如：springcloud-config-client-demo1.yml
+      uri: http://localhost:8888/ #配置文件服务器的地址
+  application:
+    name: springcloud-config-client #文件前缀名如：springcloud-config-client-demo1.yml
+
+
