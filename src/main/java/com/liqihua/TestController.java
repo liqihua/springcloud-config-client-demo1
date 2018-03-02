@@ -11,9 +11,12 @@ public class TestController {
 
     @Value("${aa.bb}")
     String bb;
+    @Value("${cc.dd}")
+    String dd;
+
 
     @RequestMapping("/test1")
     public String test1(){
-        return bb;
+        return bb+","+dd;
     }
 }
